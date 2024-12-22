@@ -1,0 +1,3 @@
+aiogram==3.16.0
+loguru==0.7.3
+python-dotenv==1.0.1
