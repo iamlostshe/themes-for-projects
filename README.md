@@ -10,15 +10,39 @@
 
 ``` bash
 git clone https://github.com/Microvolna/PARS-DIARY
-```
-
-2. **Переходим в дирректорию с проектом:**
-
-``` bash
 cd PARS-DIARY
 ```
+2. **Заполняем поля в `.env.dist` и переименовываем его в `.env`**
 
-3. **Устанавливаем необходимые зависимости:**
+3. **Устанавливаем зависимости и запускаем бота:**
+
+<details>
+<summary>Через uv (рекомендуется)</summary>
+
+**Устанавливаем `uv` (если еще не установлен):**
+
+Linux:
+
+``` bash
+curl -LsSf https://astral.sh/uv/install.sh | sh
+```
+
+Windows:
+
+``` bash
+powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
+```
+
+**Запускаем:**
+
+```bash
+uv run bot.py
+```
+
+</details>
+
+<details>
+<summary>Через requirements.txt</summary>
 
 ``` bash
 pip install -r requirements.txt
@@ -30,12 +54,12 @@ pip install -r requirements.txt
 > . venv/bin/activate
 > ```
 
-4. **Заполняем поля в `.env.dist` и переименовываем его в `.env`**
-
-5. **Запуск бота**
+**Запуск бота**
 ```
 python3 bot.py
 ```
+
+</details>
 
 # Выбор тем:
 

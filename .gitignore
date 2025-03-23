@@ -6,6 +6,9 @@ venv
 .vscode
 .idea
 
+# uv
+uv.lock
+
 # Project
 .env
 *.log
